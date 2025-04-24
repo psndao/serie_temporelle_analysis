@@ -1,9 +1,9 @@
 import requests
 import pandas as pd
 
-API_KEY = 'ZKYQJPZ7IYLA4CCC'  # Remplace par ta vraie clé
+API_KEY = 'ZKYQJPZ7IYLA4CCC'  
 SYMBOL = 'AAPL'
-FUNCTION = 'TIME_SERIES_DAILY'  # <-- Ici, la version gratuite !
+FUNCTION = 'TIME_SERIES_DAILY'  
 OUTPUTSIZE = 'full'
 
 url = (
@@ -16,8 +16,6 @@ response = requests.get(url)
 if response.status_code == 200:
     with open('data/AAPL.csv', 'wb') as f:
         f.write(response.content)
-    print("✅ Données téléchargées avec succès dans data/AAPL.csv")
+    print("Données téléchargées avec succès dans data/AAPL.csv")
 else:
-    print("❌ Erreur de téléchargement :", response.status_code)
-
-
+    print("Erreur de téléchargement :", response.status_code)
