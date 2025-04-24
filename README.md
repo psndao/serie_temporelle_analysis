@@ -23,3 +23,11 @@ Deux approches sont utilisées :
 
 ## Structure du projet
 
+
+## Installation
+
+Clonez le projet :
+```bash
+git clone https://github.com/psndao/serie_temporelle_analysis.git
+cd serie_temporelle_analysis
+
