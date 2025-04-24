@@ -15,7 +15,7 @@ def train_regression_model(df):
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
 
-    print(f"📉 MSE (régression) : {mean_squared_error(y_test, y_pred)}")
+    print(f"MSE (régression) : {mean_squared_error(y_test, y_pred)}")
 
 if __name__ == "__main__":
     df = pd.read_csv('data/AAPL_preprocessed.csv')
