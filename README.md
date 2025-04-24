@@ -22,6 +22,17 @@ Deux approches sont utilisées :
 ---
 
 ## Structure du projet
+
+serie_temporelle_analysis/
+├── data/                      # Données CSV (AAPL.csv, AAPL_preprocessed.csv)
+├── extract.py                 # Téléchargement automatique via API Alpha Vantage
+├── preprocess.py              # Prétraitement des données : création de la variable cible (Target)
+├── regression_model.py        # Modèle de régression (Linear Regression)
+├── classification_model.py    # Modèle de classification (RandomForestClassifier)
+├── main.py                    # Orchestration du pipeline complet
+├── requirements.txt           # Liste des librairies Python utilisées
+└── README.md                  # Documentation du projet
+
 ## Resultats
 ### Modèle de régression (LR)
 MSE : 3.36
